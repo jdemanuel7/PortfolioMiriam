@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
       {/* HERO */}
-      <section id="inicio" className="min-h-screen flex flex-col justify-between px-8 pt-24 pb-12">
+      <section id="inicio" className="min-h-screen flex flex-col justify-between px-6 md:px-12 pt-24 pb-12">
         {/* Top bar */}
         <motion.div
           initial={{ opacity: 0 }}
@@ -35,7 +35,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.2 }}
-            className="text-[clamp(3rem,10vw,9rem)] font-black leading-none tracking-tighter mb-8 text-[#1a1a1a]"
+            className="text-[clamp(2.5rem,10vw,9rem)] font-black leading-none tracking-tighter mb-8 text-[#1a1a1a]"
           >
             LISTA PARA
             <br />
@@ -48,7 +48,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="text-lg text-[#888] max-w-lg leading-relaxed"
+            className="text-base md:text-lg text-[#888] max-w-lg leading-relaxed"
           >
             Graduada en Publicidad y Relaciones Públicas con vocación creativa, visión estratégica y disponibilidad inmediata.
           </motion.p>
@@ -76,8 +76,10 @@ export default function Home() {
       </section>
 
       {/* SOBRE MÍ */}
-      <section id="sobre-mi" className="min-h-screen px-8 py-24 border-t border-[#d0cfc9] max-w-6xl">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-16">
+      <section id="sobre-mi" className="min-h-screen px-6 md:px-12 py-24 border-t border-[#d0cfc9]">
+        <p className="text-sm tracking-widest uppercase text-[#888] mb-16">Sobre mí</p>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-16">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -99,7 +101,7 @@ export default function Home() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="md:col-span-2 flex flex-col justify-center gap-6"
           >
-            <h2 className="text-[clamp(2.5rem,6vw,5rem)] font-black leading-none tracking-tighter text-[#1a1a1a]">
+            <h2 className="text-[clamp(2rem,6vw,5rem)] font-black leading-none tracking-tighter text-[#1a1a1a]">
               MIRIAM
               <br />
               <span className="text-transparent" style={{ WebkitTextStroke: "2px #1a1a1a" }}>MUÑOZ</span>
@@ -107,12 +109,12 @@ export default function Home() {
               FERNÁNDEZ
             </h2>
 
-            <p className="text-[#444] leading-relaxed font-serif italic text-lg">
+            <p className="text-[#444] leading-relaxed font-serif italic text-base md:text-lg">
               Graduada en Publicidad y Relaciones Públicas por la Universidad de Sevilla.
               Apasionada por la comunicación creativa, el diseño y las estrategias que conectan marcas con personas.
             </p>
 
-            <p className="text-[#444] leading-relaxed">
+            <p className="text-[#444] leading-relaxed text-sm md:text-base">
               Con formación en creatividad publicitaria, dirección de arte, redacción y estrategia,
               busco mi primera experiencia profesional donde aportar ideas frescas y seguir creciendo.
             </p>
@@ -144,20 +146,20 @@ export default function Home() {
       </section>
 
       {/* TRABAJO */}
-      <section id="trabajo" className="min-h-screen px-8 py-24 border-t border-[#d0cfc9]">
+      <section id="trabajo" className="min-h-screen px-6 md:px-12 py-24 border-t border-[#d0cfc9]">
         <ProjectList />
       </section>
 
       {/* CONTACTO */}
-      <section id="contacto" className="min-h-screen px-8 py-24 border-t border-[#d0cfc9] flex flex-col justify-between">
+      <section id="contacto" className="min-h-screen px-6 md:px-12 py-24 border-t border-[#d0cfc9] flex flex-col justify-between">
         {/* Centro */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-end">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-end">
           <motion.h2
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
-            className="text-[clamp(2.5rem,6vw,5.5rem)] font-black leading-none tracking-tighter text-[#1a1a1a]"
+            className="text-[clamp(2rem,6vw,5.5rem)] font-black leading-none tracking-tighter text-[#1a1a1a]"
           >
             ¿TIENES UN
             <br />
@@ -173,10 +175,10 @@ export default function Home() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="flex flex-col gap-4"
           >
-            <p className="text-[#888] leading-relaxed font-serif italic text-lg">
+            <p className="text-[#888] leading-relaxed font-serif italic text-base md:text-lg">
               Estoy buscando mi primera oportunidad profesional. Si crees que encajo en tu equipo, escríbeme.
             </p>
-            <a href="mailto:miriaam.mnzz@gmail.com" className="text-2xl font-serif italic text-[#c80000] hover:text-[#1a1a1a] transition-colors duration-300">
+            <a href="mailto:miriaam.mnzz@gmail.com" className="text-xl md:text-2xl font-serif italic text-[#c80000] hover:text-[#1a1a1a] transition-colors duration-300 break-all">
               miriaam.mnzz@gmail.com
             </a>
             <a href="tel:+34634694879" className="text-base text-[#888] hover:text-[#1a1a1a] transition-colors duration-300">
