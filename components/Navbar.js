@@ -14,7 +14,7 @@ export default function Navbar() {
       <Link href="/" className="font-serif text-[#1a1a1a] text-lg tracking-tight italic">
         Miriam Muñoz
       </Link>
-      <ul className="flex items-center gap-8">
+      <ul className="hidden md:flex items-center gap-8">
         {links.map((link, i) => (
           <li key={link.href} className="flex items-center gap-8">
             {i > 0 && <span className="text-[#c80000] text-xs">·</span>}

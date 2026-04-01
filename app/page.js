@@ -16,7 +16,7 @@ export default function Home() {
           className="flex items-center justify-between pt-2"
         >
           <p className="font-serif italic text-[#888] text-sm">Miriam Muñoz Fernández</p>
-          <p className="text-xs tracking-widest uppercase text-[#888]">
+          <p className="hidden md:block text-xs tracking-widest uppercase text-[#888]">
             Publicidad y Relaciones Públicas · Universidad de Sevilla
           </p>
         </motion.div>
