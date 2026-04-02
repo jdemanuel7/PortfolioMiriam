@@ -27,16 +27,23 @@ const projects = {
       { src: "/moon-mate/30.png", alt: "Fotografía producto" },
     ],
   },
-  "proyecto-02": {
-    title: "Otro Proyecto",
-    category: "Branding · Identidad",
+  "goyito-arehucas": {
+    title: "Goyito Arehucas",
+    category: "Contenido digital · Redes Sociales · Música",
     year: "2025",
     client: "Proyecto universitario",
-    concept: "",
-    description: "Descripción del proyecto.",
-    details: "",
-    tags: ["Branding", "Identidad", "Diseño"],
-    images: [],
+    concept: "El ron que viaja a la península",
+    dossier: null,
+    description:
+      "Estrategia de contenido digital para acercar Ron Arehucas —marca canaria con más de 140 años de historia— al público de la península. El proyecto gira en torno a Goyito, una mascota animada con personalidad propia que actúa como hilo conductor de toda la campaña.",
+    details:
+      "La estrategia se desplegó en múltiples plataformas: contenido corto en TikTok e Instagram para conectar con un público joven, y música original distribuida en YouTube y SoundCloud para reforzar la identidad de marca de forma diferencial y memorable.",
+    tags: ["Estrategia digital", "Contenido TikTok/Instagram", "Producción musical", "Creación de mascota"],
+    images: [
+      { src: "/goyito/1.jpg", alt: "Goyito Arehucas en el avión" },
+      { src: "/goyito/498637210_17847226287473892_4242844946409637209_n.jpg", alt: "Goyito Arehucas en la calle" },
+      { src: "/goyito/502023723_17848560579473892_8471269710333555806_n.jpg", alt: "Goyito Arehucas" },
+    ],
   },
   "proyecto-03": {
     title: "Tercer Proyecto",

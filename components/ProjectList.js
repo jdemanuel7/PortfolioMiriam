@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const projects = [
   { id: "moon-mate", title: "Moon Mate", category: "Estrategia · Fotografía · Gráfica publicitaria", year: "2025", color: "#f0e44a", image: "/moon-mate/41.png" },
-  { id: "proyecto-02", title: "Otro Proyecto", category: "Branding · Identidad", year: "2025", color: "#d5dde8" },
+  { id: "goyito-arehucas", title: "Goyito Arehucas", category: "Contenido digital · Redes Sociales · Música", year: "2025", color: "#c8860a", image: "/goyito/1.jpg" },
   { id: "proyecto-03", title: "Tercer Proyecto", category: "Contenido · Video", year: "2024", color: "#d5e8d8" },
 ];
 
