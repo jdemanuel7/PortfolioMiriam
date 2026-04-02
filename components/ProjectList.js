@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 
 const projects = [
-  { id: "moon-mate", title: "Moon Mate", category: "Estrategia · Fotografía · Gráfica publicitaria", year: "2025", color: "#f0e44a" },
+  { id: "moon-mate", title: "Moon Mate", category: "Estrategia · Fotografía · Gráfica publicitaria", year: "2025", color: "#f0e44a", image: "/moon-mate/41.png" },
   { id: "proyecto-02", title: "Otro Proyecto", category: "Branding · Identidad", year: "2025", color: "#d5dde8" },
   { id: "proyecto-03", title: "Tercer Proyecto", category: "Contenido · Video", year: "2024", color: "#d5e8d8" },
 ];
@@ -23,6 +23,9 @@ export default function ProjectList() {
           <Link href={`/work/${project.id}`} className="group block">
             {/* Imagen */}
             <div className="relative overflow-hidden aspect-[4/5] mb-4" style={{ backgroundColor: project.color }}>
+              {project.image && (
+                <img src={project.image} alt={project.title} className="absolute inset-0 w-full h-full object-cover" />
+              )}
               {/* Overlay al hover */}
               <div className="absolute inset-0 bg-[#1a1a1a]/0 group-hover:bg-[#1a1a1a]/30 transition-all duration-500" />
               {/* Número */}
