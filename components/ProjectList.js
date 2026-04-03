@@ -6,7 +6,7 @@ import Link from "next/link";
 const projects = [
   { id: "moon-mate", title: "Moon Mate", category: "Estrategia · Fotografía · Gráfica publicitaria", year: "2025", color: "#f0e44a", image: "/moon-mate/41.png" },
   { id: "goyito-arehucas", title: "Goyito Arehucas", category: "Contenido digital · Redes Sociales · Música", year: "2025", color: "#c8860a", image: "/goyito/1.jpg" },
-  { id: "proyecto-03", title: "Tercer Proyecto", category: "Contenido · Video", year: "2024", color: "#d5e8d8" },
+  { id: "goiko", title: "San Goiko", category: "Campaña publicitaria · Estrategia", year: "2025", color: "#1a1a1a", image: "/goiko/goiko_img-000.jpg" },
 ];
 
 export default function ProjectList() {

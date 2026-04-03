@@ -45,16 +45,25 @@ const projects = {
       { src: "/goyito/502023723_17848560579473892_8471269710333555806_n.jpg", alt: "Goyito Arehucas" },
     ],
   },
-  "proyecto-03": {
-    title: "Tercer Proyecto",
-    category: "Contenido · Video",
-    year: "2024",
-    client: "Proyecto personal",
-    concept: "",
-    description: "Descripción del proyecto.",
-    details: "",
-    tags: ["Video", "Producción", "Contenido"],
-    images: [],
+  "goiko": {
+    title: "San Goiko",
+    category: "Campaña publicitaria · Estrategia",
+    year: "2025",
+    client: "Proyecto universitario",
+    concept: "Sin reglas pero con mucho sabor",
+    dossier: null,
+    description:
+      "Campaña publicitaria para Goiko en torno a San Valentín. La estrategia rompe con la tradición del día de los enamorados como fecha exclusiva para parejas, apostando por celebrar el amor propio y el disfrute personal en todas sus formas: solo, con amigos o en pareja.",
+    details:
+      "El proyecto incluye estudio de competencia frente a marcas como TGB, McDonald's y Burger King, copy adaptado localmente a Cádiz, piezas gráficas para redes sociales, un vídeo de campaña y un anuncio en Spotify con canción propia. El concepto 'El amor auténtico empieza contigo mismo' actúa como hilo conductor de todas las piezas.",
+    tags: ["Estrategia creativa", "Gráfica publicitaria", "Vídeo", "Spotify", "Análisis de competencia"],
+    images: [
+      { src: "/goiko/goiko_img-000.jpg", alt: "San Goiko portada" },
+      { src: "/goiko/goiko_img-001.jpg", alt: "San Goiko pieza 1" },
+      { src: "/goiko/goiko_img-002.jpg", alt: "San Goiko pieza 2" },
+      { src: "/goiko/goiko_img-003.jpg", alt: "San Goiko pieza 3" },
+      { src: "/goiko/goiko_img-004.jpg", alt: "San Goiko pieza 4", wide: true },
+    ],
   },
 };
 
@@ -144,7 +153,7 @@ export default function ProjectPage({ params }) {
       {/* Galería de imágenes */}
       {project.images.length > 1 && (
         <div className="px-6 md:px-12">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {project.images.slice(1).map((img, i) => (
               <motion.div
                 key={i}
@@ -152,8 +161,9 @@ export default function ProjectPage({ params }) {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: i * 0.1 }}
+                className={img.wide ? "md:col-span-3" : ""}
               >
-                <img src={img.src} alt={img.alt} className="w-full h-full object-cover" />
+                <img src={img.src} alt={img.alt} className="w-full object-cover" />
               </motion.div>
             ))}
           </div>

@@ -35,7 +35,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.2 }}
-            className="text-[clamp(2.5rem,10vw,9rem)] font-black leading-none tracking-tighter mb-8 text-[#1a1a1a]"
+            className="text-[clamp(2.5rem,10vw,9rem)] font-black leading-tight md:leading-none tracking-tighter mb-6 md:mb-8 text-[#1a1a1a]"
           >
             LISTA PARA
             <br />
@@ -76,8 +76,8 @@ export default function Home() {
       </section>
 
       {/* SOBRE MÍ */}
-      <section id="sobre-mi" className="min-h-screen px-6 md:px-12 py-24 border-t border-[#d0cfc9]">
-        <p className="text-sm tracking-widest uppercase text-[#888] mb-16">Sobre mí</p>
+      <section id="sobre-mi" className="min-h-screen px-6 md:px-12 py-16 md:py-24 border-t border-[#d0cfc9]">
+        <p className="text-sm tracking-widest uppercase text-[#888] mb-8 md:mb-16">Sobre mí</p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-16">
           <motion.div
@@ -101,7 +101,7 @@ export default function Home() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="md:col-span-2 flex flex-col justify-center gap-6"
           >
-            <h2 className="text-[clamp(2rem,6vw,5rem)] font-black leading-none tracking-tighter text-[#1a1a1a]">
+            <h2 className="text-[clamp(2rem,6vw,5rem)] font-black leading-tight md:leading-none tracking-tighter text-[#1a1a1a]">
               MIRIAM
               <br />
               <span className="text-transparent" style={{ WebkitTextStroke: "2px #1a1a1a" }}>MUÑOZ</span>
@@ -146,12 +146,12 @@ export default function Home() {
       </section>
 
       {/* TRABAJO */}
-      <section id="trabajo" className="min-h-screen px-6 md:px-12 py-24 border-t border-[#d0cfc9]">
+      <section id="trabajo" className="min-h-screen px-6 md:px-12 py-16 md:py-24 border-t border-[#d0cfc9]">
         <ProjectList />
       </section>
 
       {/* CONTACTO */}
-      <section id="contacto" className="min-h-screen px-6 md:px-12 py-24 border-t border-[#d0cfc9] flex flex-col justify-between">
+      <section id="contacto" className="min-h-screen px-6 md:px-12 py-16 md:py-24 border-t border-[#d0cfc9] flex flex-col justify-between">
         {/* Centro */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-end">
           <motion.h2
@@ -159,7 +159,7 @@ export default function Home() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
-            className="text-[clamp(2rem,6vw,5.5rem)] font-black leading-none tracking-tighter text-[#1a1a1a]"
+            className="text-[clamp(2rem,6vw,5.5rem)] font-black leading-tight md:leading-none tracking-tighter text-[#1a1a1a]"
           >
             ¿TIENES UN
             <br />
