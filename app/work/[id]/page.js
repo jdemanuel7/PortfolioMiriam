@@ -19,7 +19,7 @@ const projects = {
       "El concepto creativo 'Naturalmente Activo' conecta el origen natural del mate con un estilo de vida activo pero tranquilo, asociado a deportes soft como el tenis, el yoga o el pilates. La estética visual apuesta por composiciones limpias, colores vivos y luminosos, y una comunicación cercana e inspiradora.",
     tags: ["Estrategia de comunicación", "Fotografía de producto", "Gráfica publicitaria", "Análisis de competencia"],
     images: [
-      { src: "/moon-mate/grafica.png", alt: "Gráfica publicitaria Naturalmente Activo", wide: true },
+      { src: "/moon-mate/grafica.png", alt: "Gráfica publicitaria Naturalmente Activo" },
       { src: "/moon-mate/lifestyle-zapatillas.png", alt: "Fotografía de producto lifestyle" },
       { src: "/moon-mate/lifestyle-manos.png", alt: "Fotografía lifestyle tenis" },
       { src: "/moon-mate/producto-latas.png", alt: "Fotografía producto latas" },
@@ -43,6 +43,27 @@ const projects = {
       { src: "/goyito/1.jpg", alt: "Goyito Arehucas en el avión" },
       { src: "/goyito/498637210_17847226287473892_4242844946409637209_n.jpg", alt: "Goyito Arehucas en la calle" },
       { src: "/goyito/502023723_17848560579473892_8471269710333555806_n.jpg", alt: "Goyito Arehucas" },
+    ],
+  },
+  "andalucia": {
+    title: "Andalucía",
+    category: "Activación de marca · Estrategia",
+    year: "2025",
+    client: "Proyecto universitario",
+    concept: "Impulso a crecer",
+    dossier: null,
+    description:
+      "Activación de marca para Banco Sabadell con el objetivo de reforzar su presencia territorial en Andalucía y eliminar la percepción de banco arraigado al norte y levante español.",
+    details:
+      "La estrategia gira en torno al concepto 'Impulso a crecer' y el mensaje 'De aquí, me siento' — posicionando a Sabadell como un banco que acompaña a empresas, profesionales y proyectos andaluces con la convicción de que cuando Andalucía crece, todos crecemos con ella.",
+    tags: ["Activación de marca", "Estrategia territorial", "Campaña", "Copywriting"],
+    images: [
+      { src: "/andalucia/resolucion.jpg", alt: "Resolución final campaña Sabadell" },
+      { src: "/andalucia/slogan1.png", alt: "De aquí, me siento — Sabadell Andalucía" },
+      { src: "/andalucia/slogan2.png", alt: "Slogan campaña Sabadell" },
+      { src: "/andalucia/presentacion.jpg", alt: "Presentación propuesta Sabadell" },
+      { src: "/andalucia/oficinas.jpg", alt: "Oficinas Sabadell Andalucía" },
+      { src: "/andalucia/inspiracion.jpg", alt: "Inspiración campaña" },
     ],
   },
   "goiko": {
@@ -74,9 +95,9 @@ export default function ProjectPage({ params }) {
   if (!project) notFound();
 
   return (
-    <div className="min-h-screen pt-24 pb-20">
+    <div className="min-h-screen pt-40 pb-20">
       {/* Back */}
-      <div className="px-6 md:px-12 mb-12">
+      <div className="px-6 md:px-12 mb-12 pt-8">
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.4 }}>
           <Link href="/#trabajo" className="text-sm tracking-widest uppercase text-[#888] hover:text-[#c80000] transition-colors duration-200">
             ← Volver
@@ -91,9 +112,6 @@ export default function ProjectPage({ params }) {
         transition={{ duration: 0.6, delay: 0.1 }}
         className="px-6 md:px-12 mb-16"
       >
-        <p className="text-sm tracking-widest uppercase text-[#888] mb-4">
-          {project.category} · {project.year}
-        </p>
         <h1 className="text-[clamp(3rem,8vw,7rem)] font-black leading-none tracking-tighter text-[#1a1a1a]">
           {project.title}
         </h1>
@@ -154,7 +172,7 @@ export default function ProjectPage({ params }) {
       {project.images.length > 1 && (
         <div className="px-6 md:px-12">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            {project.images.slice(1).map((img, i) => (
+            {project.images.map((img, i) => (
               <motion.div
                 key={i}
                 initial={{ opacity: 0, y: 20 }}
