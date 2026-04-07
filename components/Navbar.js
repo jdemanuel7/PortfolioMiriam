@@ -20,7 +20,7 @@ export default function Navbar() {
             {i > 0 && <span className="text-[#c80000] text-xs">·</span>}
             <a
               href={link.href}
-              className="text-sm tracking-widest uppercase text-[#888] hover:text-[#1a1a1a] transition-all duration-200"
+              className="text-sm tracking-widest uppercase text-[#888] hover:text-[#c80000] transition-all duration-200"
             >
               {link.label}
             </a>
