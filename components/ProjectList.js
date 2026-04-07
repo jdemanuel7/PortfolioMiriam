@@ -16,9 +16,8 @@ export default function ProjectList() {
       {projects.map((project, i) => (
         <motion.div
           key={project.id}
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "0px 0px -50px 0px" }}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: i * 0.1 }}
         >
           <Link href={`/work/${project.id}`} className="group block">
