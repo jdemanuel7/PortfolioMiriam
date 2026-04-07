@@ -28,7 +28,7 @@ export default function Home() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-sm tracking-widest uppercase text-[#c80000] mb-6"
           >
-            Publicista
+            Publicista · Estrategia · Fotografía
           </motion.p>
 
           <motion.h1
@@ -176,7 +176,7 @@ export default function Home() {
             className="flex flex-col gap-4"
           >
             <p className="text-[#888] leading-relaxed font-serif italic text-base md:text-lg">
-              Estoy buscando mi primera oportunidad profesional. Si crees que encajo en tu equipo, escríbeme.
+              Busco agencia donde crecer. Si trabajas en publicidad, estrategia o comunicación, me interesa.
             </p>
             <a href="mailto:miriaam.mnzz@gmail.com" className="text-xl md:text-2xl font-serif italic text-[#c80000] hover:text-[#1a1a1a] transition-colors duration-300 break-all">
               miriaam.mnzz@gmail.com
@@ -184,14 +184,18 @@ export default function Home() {
             <a href="tel:+34634694879" className="text-base text-[#888] hover:text-[#1a1a1a] transition-colors duration-300">
               +34 634 694 879
             </a>
+            <div className="flex gap-6 pt-2">
+              <a href="https://www.instagram.com/miriaam.mnzz/" target="_blank" className="text-sm text-[#888] hover:text-[#c80000] transition-colors duration-200">Instagram</a>
+              <a href="https://www.linkedin.com/in/miriam-mu%C3%B1oz-fern%C3%A1ndez-a26bb7315/" target="_blank" className="text-sm text-[#888] hover:text-[#c80000] transition-colors duration-200">LinkedIn</a>
+            </div>
           </motion.div>
         </div>
 
-        {/* Bottom */}
-        <div className="border-t border-[#d0cfc9] pt-8 flex gap-10">
-          <a href="#" className="text-sm tracking-widest uppercase text-[#888] hover:text-[#1a1a1a] transition-colors duration-200">Instagram</a>
-          <a href="https://www.linkedin.com" target="_blank" className="text-sm tracking-widest uppercase text-[#888] hover:text-[#1a1a1a] transition-colors duration-200">LinkedIn</a>
+        <div className="border-t border-[#d0cfc9] pt-6 mt-16 flex items-center justify-between text-xs tracking-widest uppercase text-[#888]">
+          <span>Miriam Muñoz Fernández</span>
+          <span>© 2025</span>
         </div>
+
       </section>
     </>
   );
