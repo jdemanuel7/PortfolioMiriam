@@ -201,6 +201,27 @@ export default function ProjectPage({ params }) {
           </div>
         </div>
       )}
+
+      {/* Vídeo embebido */}
+      {project.video && (
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="mt-8"
+        >
+          <div className="relative w-full aspect-video">
+            <iframe
+              src={`https://www.youtube.com/embed/${new URL(project.video).searchParams.get("v")}`}
+              title="Vídeo del proyecto"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              className="absolute inset-0 w-full h-full"
+            />
+          </div>
+        </motion.div>
+      )}
     </div>
   );
 }
