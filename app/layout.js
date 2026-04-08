@@ -7,7 +7,12 @@ const dmSerif = DM_Serif_Display({ subsets: ["latin"], weight: "400", variable: 
 
 export const metadata = {
   title: "Miriam Muñoz Fernández — Portfolio",
-  description: "Graduada en Publicidad y Relaciones Públicas por la Universidad de Sevilla",
+  description: "Creativa publicitaria graduada en la Universidad de Sevilla. Estrategia, dirección de arte y fotografía.",
+  openGraph: {
+    title: "Miriam Muñoz Fernández — Portfolio",
+    description: "Creativa publicitaria graduada en la Universidad de Sevilla. Estrategia, dirección de arte y fotografía.",
+    type: "website",
+  },
 };
 
 export default function RootLayout({ children }) {
