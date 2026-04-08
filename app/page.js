@@ -28,7 +28,7 @@ export default function Home() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-sm tracking-widest uppercase text-[#c80000] mb-6"
           >
-            Publicista · Estrategia · Fotografía
+            Creativa · Estrategia · Fotografía
           </motion.p>
 
           <motion.h1
@@ -109,35 +109,28 @@ export default function Home() {
 
             <p className="text-[#444] leading-relaxed font-serif italic text-base md:text-lg">
               Graduada en Publicidad y Relaciones Públicas por la Universidad de Sevilla.
-              Apasionada por la comunicación creativa, el diseño y las estrategias que conectan marcas con personas.
+              Creativa con base en estrategia: me interesa la idea, el concepto y cómo conecta con las personas.
             </p>
 
             <p className="text-[#444] leading-relaxed text-sm md:text-base">
-              Con formación en creatividad publicitaria, dirección de arte, redacción y estrategia,
-              busco mi primera experiencia profesional donde aportar ideas frescas y seguir creciendo.
+              Formación en creatividad publicitaria, dirección de arte, redacción y fotografía.
+              Busco mi primera experiencia en una agencia donde seguir creciendo.
             </p>
 
-            <div className="pt-2 flex flex-col gap-2 text-sm text-[#888]">
-              <span>🌐 Castellano nativo · Inglés B1 (Cambridge) · Francés básico</span>
-              <span>📷 Formación en fotografía — Estudios Lechuga, Úbeda</span>
+            <div className="pt-2 flex flex-wrap gap-2">
+              {["Castellano nativo", "Inglés B1 · Cambridge", "Francés básico", "Fotografía · Estudios Lechuga"].map(tag => (
+                <span key={tag} className="text-xs tracking-wide border border-[#d0cfc9] px-3 py-1 text-[#444]">{tag}</span>
+              ))}
             </div>
 
-            <div className="pt-4 relative group/cv inline-block">
+            <div className="pt-4">
               <a
                 href="/cv-miriam-munoz.pdf"
                 download
-                className="text-sm tracking-widest uppercase text-[#c80000] hover:text-[#1a1a1a] transition-colors duration-300 flex items-center gap-2"
+                className="inline-block text-sm tracking-widest uppercase bg-[#c80000] text-[#f5f4f0] px-6 py-3 hover:bg-[#1a1a1a] transition-colors duration-300"
               >
                 Descargar CV ↓
               </a>
-              {/* Preview al hover */}
-              <div className="absolute bottom-10 left-0 w-64 h-80 shadow-xl opacity-0 group-hover/cv:opacity-100 transition-opacity duration-300 pointer-events-none z-50 border border-[#d0cfc9]">
-                <iframe
-                  src="/cv-miriam-munoz.pdf"
-                  className="w-full h-full"
-                  title="Preview CV"
-                />
-              </div>
             </div>
           </motion.div>
         </div>
