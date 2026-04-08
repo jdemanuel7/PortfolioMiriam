@@ -34,6 +34,7 @@ const projects = {
     client: "Proyecto universitario",
     concept: "El ron que viaja a la península",
     dossier: null,
+    video: "https://www.youtube.com/watch?v=J75hGjB8P_w",
     description:
       "Estrategia de contenido digital para acercar Ron Arehucas —marca canaria con más de 140 años de historia— al público de la península. El proyecto gira en torno a Goyito, una mascota animada con personalidad propia que actúa como hilo conductor de toda la campaña.",
     details:
@@ -162,6 +163,19 @@ export default function ProjectPage({ params }) {
                 className="text-sm tracking-widest uppercase text-[#c80000] hover:text-[#1a1a1a] transition-colors duration-300 flex items-center gap-2"
               >
                 Descargar PDF ↓
+              </a>
+            </div>
+          )}
+          {project.video && (
+            <div>
+              <p className="text-sm tracking-widest uppercase text-[#888] mb-3">Vídeo</p>
+              <a
+                href={project.video}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm tracking-widest uppercase text-[#c80000] hover:text-[#1a1a1a] transition-colors duration-300 flex items-center gap-2"
+              >
+                Ver en YouTube ↗
               </a>
             </div>
           )}
