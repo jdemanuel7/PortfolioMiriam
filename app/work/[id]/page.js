@@ -166,19 +166,6 @@ export default function ProjectPage({ params }) {
               </a>
             </div>
           )}
-          {project.video && (
-            <div>
-              <p className="text-sm tracking-widest uppercase text-[#888] mb-3">Vídeo</p>
-              <a
-                href={project.video}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-sm tracking-widest uppercase text-[#c80000] hover:text-[#1a1a1a] transition-colors duration-300 flex items-center gap-2"
-              >
-                Ver en YouTube ↗
-              </a>
-            </div>
-          )}
         </div>
       </motion.div>
 
