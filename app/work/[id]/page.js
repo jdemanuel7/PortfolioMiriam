@@ -95,9 +95,9 @@ export default function ProjectPage({ params }) {
   if (!project) notFound();
 
   return (
-    <div className="min-h-screen pt-40 pb-20">
+    <div className="min-h-screen pt-40 pb-20" style={{ paddingLeft: "clamp(2rem, 6vw, 6rem)", paddingRight: "clamp(2rem, 6vw, 6rem)" }}>
       {/* Back */}
-      <div className="px-6 md:px-12 mb-12 pt-8">
+      <div className="mb-12 pt-8">
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.4 }}>
           <Link href="/#trabajo" className="text-sm tracking-widest uppercase text-[#888] hover:text-[#c80000] transition-colors duration-200">
             ← Volver
@@ -110,7 +110,7 @@ export default function ProjectPage({ params }) {
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.1 }}
-        className="px-6 md:px-12 mb-16"
+        className="mb-16"
       >
         <h1 className="text-[clamp(3rem,8vw,7rem)] font-black leading-none tracking-tighter text-[#1a1a1a]">
           {project.title}
@@ -127,7 +127,7 @@ export default function ProjectPage({ params }) {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.6, delay: 0.3 }}
-        className="px-6 md:px-12 grid grid-cols-1 md:grid-cols-3 gap-12 border-t border-[#d0cfc9] pt-12 mb-16"
+        className="grid grid-cols-1 md:grid-cols-3 gap-12 border-t border-[#d0cfc9] pt-12 mb-16"
       >
         <div className="md:col-span-2 space-y-4">
           <p className="text-[#444] leading-relaxed text-lg font-serif italic">{project.description}</p>
@@ -170,7 +170,7 @@ export default function ProjectPage({ params }) {
 
       {/* Galería de imágenes */}
       {project.images.length > 1 && (
-        <div className="px-6 md:px-12">
+        <div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {project.images.map((img, i) => (
               <motion.div

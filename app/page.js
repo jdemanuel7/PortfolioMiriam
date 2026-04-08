@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
       {/* HERO */}
-      <section id="inicio" className="min-h-screen flex flex-col justify-between px-6 md:px-12 pt-24 pb-12">
+      <section id="inicio" className="min-h-screen flex flex-col justify-between pt-24 pb-12" style={{ paddingLeft: "clamp(2rem, 6vw, 6rem)", paddingRight: "clamp(2rem, 6vw, 6rem)" }}>
         {/* Top bar */}
         <motion.div
           initial={{ opacity: 0 }}
@@ -76,7 +76,7 @@ export default function Home() {
       </section>
 
       {/* SOBRE MÍ */}
-      <section id="sobre-mi" className="min-h-screen px-6 md:px-12 py-16 md:py-24 border-t border-[#d0cfc9]">
+      <section id="sobre-mi" className="min-h-screen py-16 md:py-24 border-t border-[#d0cfc9]" style={{ paddingLeft: "clamp(2rem, 6vw, 6rem)", paddingRight: "clamp(2rem, 6vw, 6rem)" }}>
         <p className="text-sm tracking-widest uppercase text-[#888] mb-8 md:mb-16">Sobre mí</p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-16">
@@ -146,12 +146,12 @@ export default function Home() {
       </section>
 
       {/* TRABAJO */}
-      <section id="trabajo" className="min-h-screen px-6 md:px-12 py-16 md:py-24 border-t border-[#d0cfc9]">
+      <section id="trabajo" className="min-h-screen py-16 md:py-24 border-t border-[#d0cfc9]" style={{ paddingLeft: "clamp(2rem, 6vw, 6rem)", paddingRight: "clamp(2rem, 6vw, 6rem)" }}>
         <ProjectList />
       </section>
 
       {/* CONTACTO */}
-      <section id="contacto" className="min-h-screen px-6 md:px-12 py-16 md:py-24 border-t border-[#d0cfc9] flex flex-col justify-between">
+      <section id="contacto" className="min-h-screen py-16 md:py-24 border-t border-[#d0cfc9] flex flex-col justify-between" style={{ paddingLeft: "clamp(2rem, 6vw, 6rem)", paddingRight: "clamp(2rem, 6vw, 6rem)" }}>
         {/* Centro */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-end">
           <motion.h2

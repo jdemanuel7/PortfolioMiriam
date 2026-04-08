@@ -10,7 +10,7 @@ const links = [
 
 export default function Navbar() {
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 md:px-12 py-5 md:py-6 bg-[#f5f4f0]/90 backdrop-blur-sm border-b border-[#d0cfc9]">
+    <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between py-5 md:py-6 bg-[#f5f4f0]/90 backdrop-blur-sm border-b border-[#d0cfc9]" style={{ paddingLeft: "clamp(2rem, 6vw, 6rem)", paddingRight: "clamp(2rem, 6vw, 6rem)" }}>
       <Link href="/" className="font-serif text-[#1a1a1a] text-lg tracking-tight italic">
         Miriam Muñoz
       </Link>
