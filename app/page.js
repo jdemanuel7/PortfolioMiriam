@@ -35,7 +35,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.2 }}
-            className="text-[clamp(2.5rem,10vw,9rem)] font-black leading-tight md:leading-none tracking-tighter mb-6 md:mb-8 text-[#1a1a1a]"
+            className="text-[clamp(2.8rem,11vw,9rem)] font-black leading-[0.95] tracking-tighter mb-6 md:mb-8 text-[#1a1a1a]"
           >
             LISTA PARA
             <br />
@@ -77,8 +77,6 @@ export default function Home() {
 
       {/* SOBRE MÍ */}
       <section id="sobre-mi" className="min-h-screen py-16 md:py-24 border-t border-[#d0cfc9]" style={{ paddingLeft: "clamp(2rem, 6vw, 6rem)", paddingRight: "clamp(2rem, 6vw, 6rem)" }}>
-        <p className="text-sm tracking-widest uppercase text-[#888] mb-8 md:mb-16">Sobre mí</p>
-
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-16">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -90,7 +88,7 @@ export default function Home() {
             <img
               src="/miriam.jpg"
               alt="Miriam Muñoz"
-              className="w-full aspect-[3/4] object-cover object-top grayscale"
+              className="w-full max-h-[50vh] md:max-h-none md:aspect-[3/4] object-cover object-top grayscale"
             />
           </motion.div>
 
