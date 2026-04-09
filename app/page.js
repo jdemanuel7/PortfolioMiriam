@@ -142,9 +142,10 @@ export default function Home() {
       </section>
 
       {/* CONTACTO */}
-      <section id="contacto" className="min-h-screen py-16 md:py-24 border-t border-[#d0cfc9] flex flex-col justify-between" style={{ paddingLeft: "clamp(2rem, 6vw, 6rem)", paddingRight: "clamp(2rem, 6vw, 6rem)" }}>
+      <section id="contacto" className="min-h-screen pt-24 md:pt-32 pb-16 border-t border-[#d0cfc9] flex flex-col justify-between" style={{ paddingLeft: "clamp(2rem, 6vw, 6rem)", paddingRight: "clamp(2rem, 6vw, 6rem)" }}>
         {/* Centro */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-end">
+        <div className="flex-1 flex items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-16 items-start md:items-end w-full">
           <motion.h2
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -181,8 +182,9 @@ export default function Home() {
             </div>
           </motion.div>
         </div>
+        </div>
 
-        <div className="border-t border-[#d0cfc9] pt-6 mt-16 flex items-center justify-between text-xs tracking-widest uppercase text-[#888]">
+        <div className="border-t border-[#d0cfc9] pt-6 flex items-center justify-between text-xs tracking-widest uppercase text-[#888]">
           <span>Miriam Muñoz Fernández</span>
           <span>© 2025</span>
         </div>
