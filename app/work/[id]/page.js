@@ -182,7 +182,7 @@ export default function ProjectPage({ params }) {
                 transition={{ duration: 0.5, delay: i * 0.1 }}
                 className={img.wide ? "md:col-span-3" : ""}
               >
-                <img src={img.src} alt={img.alt} className="w-full object-cover" />
+                <img src={img.src} alt={img.alt} className="w-full object-cover" loading="lazy" />
               </motion.div>
             ))}
           </div>

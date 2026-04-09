@@ -125,7 +125,7 @@ export default function Home() {
 
             <div className="pt-4">
               <a
-                href="/cv-miriam-munoz.pdf"
+                href="/cv-miriam-munoz-2025.pdf"
                 download
                 className="inline-block text-sm tracking-widest uppercase bg-[#c80000] text-[#f5f4f0] px-6 py-3 hover:bg-[#1a1a1a] transition-colors duration-300"
               >
@@ -186,7 +186,7 @@ export default function Home() {
 
         <div className="border-t border-[#d0cfc9] pt-6 flex items-center justify-between text-xs tracking-widest uppercase text-[#888]">
           <span>Miriam Muñoz Fernández</span>
-          <span>© 2025</span>
+          <span>© {new Date().getFullYear()}</span>
         </div>
 
       </section>
