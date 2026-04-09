@@ -118,7 +118,7 @@ export default function Home() {
             </p>
 
             <div className="pt-2 flex flex-wrap gap-2">
-              {["Castellano nativo", "Inglés B1 · Cambridge", "Francés básico", "Fotografía · Estudios Lechuga"].map(tag => (
+              {["Castellano nativo", "Inglés B1 · Cambridge", "Francés básico"].map(tag => (
                 <span key={tag} className="text-xs tracking-wide border border-[#d0cfc9] px-3 py-1 text-[#444]">{tag}</span>
               ))}
             </div>
