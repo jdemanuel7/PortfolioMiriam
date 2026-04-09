@@ -7,7 +7,7 @@ const projects = [
   { id: "moon-mate", title: "Moon Mate", category: "Estrategia · Fotografía · Gráfica publicitaria", year: "2025", color: "#f0e44a", image: "/moon-mate/41.png" },
   { id: "goyito-arehucas", title: "Goyito Arehucas", category: "Contenido digital · Redes Sociales · Música", year: "2025", color: "#c8860a", image: "/goyito/1.jpg" },
   { id: "goiko", title: "San Goiko", category: "Campaña publicitaria · Estrategia", year: "2025", color: "#1a1a1a", image: "/goiko/goiko_img-000.jpg" },
-  { id: "andalucia", title: "Andalucía", category: "Activación de marca", year: "2025", color: "#e8f0fe", image: "/andalucia/logo.png", objectFit: "contain" },
+  { id: "andalucia", title: "Andalucía", category: "Activación de marca", year: "2026", color: "#e8f0fe", image: "/andalucia/logo.png", objectFit: "contain" },
 ];
 
 export default function ProjectList() {
@@ -22,7 +22,7 @@ export default function ProjectList() {
         >
           <Link href={`/work/${project.id}`} className="group block">
             {/* Imagen */}
-            <div className="relative overflow-hidden aspect-[4/5] mb-4" style={{ backgroundColor: project.color }}>
+            <div className="relative overflow-hidden mb-4" style={{ backgroundColor: project.color, aspectRatio: "4/5" }}>
               {project.image && (
                 <img src={project.image} alt={project.title} className={`absolute inset-0 w-full h-full ${project.objectFit === "contain" ? "object-contain p-6" : "object-cover"}`} />
               )}

@@ -28,7 +28,7 @@ export default function Home() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-sm tracking-widest uppercase text-[#c80000] mb-6"
           >
-            Creativa · Estrategia · Fotografía
+            Estrategia Creativa · Copy · Dirección de Arte
           </motion.p>
 
           <motion.h1
@@ -112,6 +112,10 @@ export default function Home() {
               Creativa con base en estrategia: me interesa la idea, el concepto y cómo conecta con las personas.
             </p>
 
+            <p className="text-[#c80000] font-serif italic text-base md:text-lg border-l-2 border-[#c80000] pl-4">
+              "Me interesan las marcas que tienen algo que decir y no saben cómo decirlo."
+            </p>
+
             <p className="text-[#444] leading-relaxed text-sm md:text-base">
               Formación en creatividad publicitaria, dirección de arte, redacción y fotografía.
               Busco mi primera experiencia en una agencia donde seguir creciendo.
@@ -178,7 +182,7 @@ export default function Home() {
             </a>
             <div className="flex gap-6 pt-2">
               <a href="https://www.instagram.com/miriaam.mnzz/" target="_blank" className="text-sm text-[#888] hover:text-[#c80000] transition-colors duration-200">Instagram</a>
-              <a href="https://www.linkedin.com/in/miriam-mu%C3%B1oz-fern%C3%A1ndez-a26bb7315/" target="_blank" className="text-sm text-[#888] hover:text-[#c80000] transition-colors duration-200">LinkedIn</a>
+              <a href="https://www.linkedin.com/in/miriam-mu%C3%B1oz-fern%C3%A1ndez-a26bb7315/" target="_blank" className="text-sm text-[#888] hover:text-[#c80000] transition-colors duration-200">LinkedIn <span className="opacity-60">· linkedin.com/in/miriam-muñoz</span></a>
             </div>
           </motion.div>
         </div>

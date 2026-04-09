@@ -9,7 +9,7 @@ const dmSerif = DM_Serif_Display({ subsets: ["latin"], weight: "400", variable: 
 export const metadata = {
   title: "Miriam Muñoz Fernández — Portfolio",
   description: "Creativa publicitaria graduada en la Universidad de Sevilla. Estrategia, dirección de arte y fotografía.",
-  metadataBase: new URL("https://www.miriammunoz.com"),
+  metadataBase: new URL("https://miriammunoz.vercel.app"),
   openGraph: {
     title: "Miriam Muñoz Fernández — Portfolio",
     description: "Creativa publicitaria graduada en la Universidad de Sevilla. Estrategia, dirección de arte y fotografía.",
