@@ -12,7 +12,7 @@
 .heroText {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   padding: 5rem 3.5rem 4rem 4rem;
   border-right: 1px solid #d0cfc9;
 }
